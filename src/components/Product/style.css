@@ -1,0 +1,59 @@
+.List{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    height: 12rem;
+    border: 2px solid #e0e0e0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+.backgroundImage{
+    background-color: #F5F5F5F5;
+}
+.Image{
+    width: 5.5rem;
+}
+
+.Name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #333333;
+    width: 100px;
+    margin-left: 10px;
+}
+.Category{
+    font-size: 0.8rem;
+    line-height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #828282;
+    width: 100px;
+    margin-left: 10px;
+}
+.Price{
+    width: 100px;
+    height: 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 24px;
+    color: #27ae60;
+    margin-left: 10px;
+}
+.ButtonAdd{
+    width: 100px;
+    height: px;
+    border-radius: 8px;
+    padding: 0px, 20px, 0px, 20px;
+    color: #ffffff;
+    background-color: #27ae60;
+    border: 2px solid #27ae60;
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 17px;
+    margin-left: 10px;
+}

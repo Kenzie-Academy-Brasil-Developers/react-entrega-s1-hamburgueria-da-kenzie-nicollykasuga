@@ -1,0 +1,10 @@
+.ContainerItems{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 33em;
+    height: 411px;
+    border-radius: 5px;
+}

@@ -1,0 +1,32 @@
+.Nav{
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    background-color: #F5F5F5;
+}
+
+.Input{
+    position: absolute;
+    right: 177px;
+    border-radius: 9px;
+    border: 2px solid #E0E0E0;
+    width: 271px;
+    height: 34px;
+    top: 4px;
+    padding-left: 9px;
+    color: #76818A;
+}
+
+.ButtonInput{
+    width: 79px;
+    background-color: #27AE60;
+    position: absolute;
+    border-radius: 8px;
+    height: 27px;
+    border: 2px solid #27AE60;
+    right: 188px;
+    top: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
