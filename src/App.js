@@ -17,7 +17,6 @@ function App() {
   ]);
   const [filteredProducts, setFilteredProducts] = useState([])
   const [currentSale, setCurrentSale] = useState([])
-  const [cartTotal, setCartTotal] = useState(0)
 
   function showProducts(input){
     setFilteredProducts(products.filter((item) => {return item.name === input}))
@@ -32,18 +31,18 @@ function App() {
 
     setCurrentSale(filteredItem)
   }
-
+  const reduceProducts = currentSale
+    .reduce((valorAnterior, valorAtual) => (
+    valorAnterior + valorAtual.price), 0)
+    .toFixed(2)
+    
   function handleClick(productId){
     const foundedProduct = products.find((item) => ( item.id === productId))
     const cart = currentSale.find((item) => (item.id === productId))
-    const reduceProducts= currentSale.reduce((valorAnterior, valorAtual) => (
-        valorAnterior + valorAtual.price), 0).toFixed(2)
+    
 
     if(!cart){
     setCurrentSale([...currentSale,foundedProduct])
-      
-        console.log(currentSale)
-    setCartTotal(reduceProducts)
   
     }
   }
@@ -55,7 +54,7 @@ function App() {
         <Search className="Search" showProducts={showProducts}/>
         <div className="Main">
         <MenuContainer className="Menucontainer" products={products} handleClick={handleClick} filteredProducts={filteredProducts}/>
-        <Cart className="Cart" currentSale={currentSale} cartTotal={cartTotal} removeItem={removeItem}/>
+        <Cart className="Cart" currentSale={currentSale} reduceProducts={reduceProducts} removeItem={removeItem}/>
         </div>
       </header>
     </div>

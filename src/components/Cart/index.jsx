@@ -1,5 +1,5 @@
 import './style.css'
-export default function Cart ({currentSale, cartTotal, removeItem}) {
+export default function Cart ({currentSale, reduceProducts, removeItem}) {
     return(
       <>
         <section className="CartSection">
@@ -20,7 +20,7 @@ export default function Cart ({currentSale, cartTotal, removeItem}) {
           <div className="LineStyle"></div>
             <div className="TotalContainer">
               <p className="TotalCost">Total:</p>
-              <p>R$ {cartTotal}</p>
+              <p>R$ {reduceProducts}</p>
             </div>
             </div>
       </section>
